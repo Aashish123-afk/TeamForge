@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Projects | TeamForge</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <script src="../js/extra-pages.js" defer></script>
+</head>
+<body data-page="manage-projects">
+  <header class="topbar">
+    <a class="logo" href="admin-dashboard.html" aria-label="TeamForge home"><span class="logo-mark">T</span><span>Team<span class="forge">Forge</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="admin-dashboard.html">Dashboard</a><a href="#" data-logout>Log out</a></nav>
+  </header>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="admin-dashboard.html">Dashboard</a><span aria-hidden="true">/</span><span>Manage Projects</span>
+    </nav>
+    <section class="page-heading">
+      <h1>Manage Projects</h1>
+      <p>Review and remove demo projects saved in this browser.</p>
+    </section>
+    
+    <section class="card">
+      <div class="form-group"><label for="projectSearch">Search projects</label><input id="projectSearch" placeholder="Search by title, domain, or tech stack"></div>
+      <div class="table-wrap"><table><thead><tr><th>Project</th><th>Domain</th><th>Tech stack</th><th>Visibility</th><th>Action</th></tr></thead><tbody id="adminProjectsBody"><tr><td colspan="5">No projects have been created yet.</td></tr></tbody></table></div>
+      <p class="message" id="adminProjectMessage" role="status" aria-live="polite"></p>
+      <div class="page-actions"><a class="action-link secondary" href="admin-dashboard.html">Back to Admin Dashboard</a></div>
+    </section>
+    
+  </main>
+  <footer class="footer">TeamForge · Frontend demonstration mode</footer>
+</body>
+</html>

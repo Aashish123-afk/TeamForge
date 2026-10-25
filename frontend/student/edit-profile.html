@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f8fc">
+    <title>Edit Profile | TeamForge</title>
+    <link rel="stylesheet" href="../style/edit-profile.css">
+    <script src="../js/edit-profile.js" defer></script>
+</head>
+<body data-role="student">
+    <main class="edit-profile-page">
+        <header class="edit-page-header">
+            <a href="dashboard.html" class="brand" aria-label="TeamForge dashboard">
+                <span class="brand-mark">T</span>
+                <span class="brand-name"><span class="team-text">Team</span><span class="forge-text">Forge</span></span>
+            </a>
+            <a href="profile.html" class="header-back"><span aria-hidden="true">←</span> Back to profile</a>
+        </header>
+
+        <nav class="edit-breadcrumb" aria-label="Breadcrumb">
+            <a href="dashboard.html">Dashboard</a>
+            <span aria-hidden="true">/</span>
+            <a href="profile.html">My Profile</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Edit Profile</span>
+        </nav>
+
+        <section class="edit-intro">
+            <div>
+                <p class="eyebrow">YOUR TEAMFORGE IDENTITY</p>
+                <h1>Edit your profile</h1>
+                <p>Keep your details up to date so teammates can understand your skills and interests.</p>
+            </div>
+            <div class="profile-avatar" id="avatarPreview" aria-hidden="true">S</div>
+        </section>
+
+        <form id="editProfileForm" class="profile-form">
+            <section class="profile-section">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <div>
+                        <h2>Personal information</h2>
+                        <p>Basic details people can use to identify you.</p>
+                    </div>
+                </div>
+                <div class="fields-grid">
+                    <div class="field">
+                        <label for="fullName">Full name <span>*</span></label>
+                        <input id="fullName" name="fullName" type="text" maxlength="80" autocomplete="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address <span>*</span></label>
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                        <small>Your demo profile uses this email as its identifier.</small>
+                    </div>
+                    <div class="field">
+                        <label for="college">College / University</label>
+                        <input id="college" name="college" type="text" maxlength="120" placeholder="Your college or university">
+                    </div>
+                    <div class="field">
+                        <label for="course">Course / Degree</label>
+                        <input id="course" name="course" type="text" maxlength="100" placeholder="e.g. B.Tech Computer Science">
+                    </div>
+                    <div class="field">
+                        <label for="year">Current year</label>
+                        <select id="year" name="year">
+                            <option value="">Select your year</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="location">Location</label>
+                        <input id="location" name="location" type="text" maxlength="100" placeholder="City, state">
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile-section">
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <div>
+                        <h2>Skills and interests</h2>
+                        <p>Help potential teammates find the right match.</p>
+                    </div>
+                </div>
+                <div class="fields-grid">
+                    <div class="field full-width">
+                        <label for="skills">Technical skills</label>
+                        <input id="skills" name="skills" type="text" maxlength="400" placeholder="e.g. C++, HTML, CSS, JavaScript, MySQL">
+                        <small>Separate skills with commas.</small>
+                    </div>
+                    <div class="field">
+                        <label for="proficiency">Experience level</label>
+                        <select id="proficiency" name="proficiency">
+                            <option value="">Choose your level</option>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="preferredRole">Preferred project role</label>
+                        <select id="preferredRole" name="preferredRole">
+                            <option value="">Choose a role</option>
+                            <option>Frontend Developer</option>
+                            <option>Backend Developer</option>
+                            <option>Full-Stack Developer</option>
+                            <option>AI / ML</option>
+                            <option>Data / Database</option>
+                            <option>UI / UX Design</option>
+                            <option>Research</option>
+                            <option>Open to any role</option>
+                        </select>
+                    </div>
+                    <div class="field full-width">
+                        <label for="bio">About me</label>
+                        <textarea id="bio" name="bio" rows="4" maxlength="700" placeholder="Tell teammates what you enjoy building, what you're learning, and what you can contribute."></textarea>
+                        <div class="character-count"><span id="bioCount">0</span>/700 characters</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile-section">
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <div>
+                        <h2>Availability</h2>
+                        <p>Set expectations before starting a project together.</p>
+                    </div>
+                </div>
+                <div class="fields-grid">
+                    <div class="field">
+                        <label for="hours">Time available per week</label>
+                        <select id="hours" name="hours">
+                            <option value="">Select availability</option>
+                            <option>1–3 hours</option>
+                            <option>3–5 hours</option>
+                            <option>5–8 hours</option>
+                            <option>8+ hours</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="workMode">Preferred collaboration</label>
+                        <select id="workMode" name="workMode">
+                            <option value="">Select preference</option>
+                            <option>Online</option>
+                            <option>In person</option>
+                            <option>Hybrid</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-feedback" id="formMessage" role="status" aria-live="polite"></div>
+            <div class="form-actions">
+                <a class="button button-secondary" href="profile.html">Cancel</a>
+                <button class="button button-primary" type="submit">Save changes <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="demo-note">Frontend demo: changes are saved in this browser only. Form will be connected to the backend when the API is ready.</p>
+        </form>
+    </main>
+</body>
+</html>

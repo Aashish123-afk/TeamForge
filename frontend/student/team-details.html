@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team / Project Details | TeamForge</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <script src="../js/extra-pages.js" defer></script>
+</head>
+<body data-page="team-details">
+  <header class="topbar">
+    <a class="logo" href="dashboard.html" aria-label="TeamForge home"><span class="logo-mark">T</span><span>Team<span class="forge">Forge</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a><a href="find-team.html">Find a Team</a><a href="find-teammate.html">Find a Teammate</a><a href="applications.html">Applications</a><a href="my-team.html">My Team</a><a href="#" data-logout>Log out</a></nav>
+  </header>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="dashboard.html">Dashboard</a><span aria-hidden="true">/</span><span>Team / Project Details</span>
+    </nav>
+    <section class="page-heading">
+      <h1>Team / Project Details</h1>
+      <p>Review a project's goals, technology, and required skills before deciding whether to apply.</p>
+    </section>
+    
+    <div id="teamDetailsContent" class="two-column">
+      <section class="card"><h2 class="section-title" id="detailTitle">Project details</h2><p id="detailDescription">Choose a project from Find a Team or open this page with a project ID.</p><div id="detailFields"></div><div class="page-actions"><button id="applyButton" type="button">Apply to Join</button><a class="action-link secondary" href="find-team.html">Browse Projects</a></div><p class="message" id="detailMessage" role="status" aria-live="polite"></p></section>
+      <aside class="card"><h2>Before you apply</h2><p>Check that the tech stack, project domain, and expected commitment match your interests.</p><p class="help">This demo records an application locally. A backend is required for real applications between users.</p></aside>
+    </div>
+    
+  </main>
+  <footer class="footer">TeamForge · Frontend demonstration mode</footer>
+</body>
+</html>

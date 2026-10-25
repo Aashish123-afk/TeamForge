@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Teammate | TeamForge</title><link rel="stylesheet" href="../style/app.css"><script src="../js/app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="logo" href="dashboard.html"><span class="logo-mark">T</span><span>Team</span><span class="forge">Forge</span></a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a href="profile.html">My Profile</a><a href="applications.html">Applications</a></nav></header>
+<main class="page">
+  <section class="page-heading"><h1>Find a Teammate</h1><p>Tell us about your project and the type of teammate you need.</p></section>
+  <form class="form-card" id="teammateForm">
+    <div class="form-grid">
+      <div class="form-group full"><label for="projectName">Project name</label><input id="projectName" name="projectName" required placeholder="e.g. Campus Event Planner"></div>
+      <div class="form-group"><label for="domain">Project domain</label><select id="domain" name="domain" required><option value="">Select domain</option><option>Web Development</option><option>AI / ML</option><option>App Development</option><option>Cybersecurity</option><option>Data Science</option></select></div>
+      <div class="form-group"><label for="teamSize">Additional teammates needed</label><select id="teamSize" name="teamSize" required><option value="">Select number</option><option>1</option><option>2</option><option>3</option><option>4+</option></select></div>
+      <div class="form-group full"><label for="techStack">Required tech stack</label><input id="techStack" name="techStack" required placeholder="e.g. React, C++, MySQL"></div>
+      <div class="form-group"><label for="roleNeeded">Primary role needed</label><select id="roleNeeded" name="roleNeeded" required><option value="">Select role</option><option>Frontend</option><option>Backend</option><option>Database</option><option>AI / ML</option><option>Full Stack</option><option>Testing / Documentation</option></select></div>
+      <div class="form-group"><label for="experience">Preferred experience</label><select id="experience" name="experience"><option>Any level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+      <div class="form-group full"><label for="description">Project description</label><textarea id="description" name="description" required placeholder="What are you building, and what will the teammate work on?"></textarea></div>
+    </div>
+    <button type="submit">Find potential teammates</button>
+  </form>
+</main>
+</body></html>

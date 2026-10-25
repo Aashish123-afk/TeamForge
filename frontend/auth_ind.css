@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef0ef;
+    color: #172033;
+    overflow: hidden;
+}
+.background-logos {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    pointer-events: none;
+    z-index: 0;
+}
+.background-logos span {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #d9dddc;
+    transform: rotate(-8deg);
+}
+.background-logos span span {
+    color: #c8d8e5;
+}
+.auth-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+.auth-card {
+    width: 410px;
+    background: #ffffff;
+    border: 1px solid #dfe2df;
+    border-radius: 12px;
+    padding: 38px 36px 30px;
+    box-shadow:
+        0 20px 50px rgba(23, 32, 51, 0.10);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    margin-bottom: 32px;
+}
+
+.logo-mark {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6b9dcc;
+    color: white;
+    border-radius: 7px;
+    font-size: 17px;
+    margin-right: 9px;
+}
+.team-text {
+    color: #172033;
+}
+.forge-text {
+    color: #6b9dcc;
+}
+.auth-heading {
+    margin-bottom: 28px;
+}
+.auth-heading h1 {
+    font-size: 25px;
+    letter-spacing: -0.7px;
+    margin-bottom: 8px;
+}
+.auth-heading p {
+    color: #7b8390;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.login-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+.student-button {
+    background: #172033;
+    border: 1px solid #172033;
+    color: white;
+}
+.admin-button {
+    background: white;
+    border: 1px solid #d5d9d7;
+    color: #172033;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.button-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    background: #eef1f3;
+    color: #4c5a70;
+}
+.student-button .button-icon {
+    background: #39465c;
+    color: white;
+}
+.button-content strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.button-content span {
+    display: block;
+    font-size: 10px;
+    color: #858e9c;
+}
+
+.student-button .button-content span {
+    color: #b7bfca;
+}
+.arrow {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 7px 18px rgba(23, 32, 51, 0.10);
+}
+.student-button:hover {
+    background: #29364d;
+}
+.admin-button:hover {
+    border-color: #172033;
+}
+.login-button:hover .arrow {
+    transform: translateX(4px);
+}
+.auth-footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #eceeeb;
+    text-align: center;
+}
+.auth-footer span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #66748b;
+}
+.auth-footer p {
+    margin-top: 3px;
+    font-size: 12px;
+    color: #a0a6ae;
+}
+@media (max-width: 600px) {
+    .auth-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 32px 25px 27px;
+    }
+    .background-logos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .background-logos span {
+        font-size: 34px;
+    }
+}

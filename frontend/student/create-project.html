@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Project | TeamForge</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <script src="../js/extra-pages.js" defer></script>
+</head>
+<body data-page="create-project">
+  <header class="topbar">
+    <a class="logo" href="dashboard.html" aria-label="TeamForge home"><span class="logo-mark">T</span><span>Team<span class="forge">Forge</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a><a href="find-team.html">Find a Team</a><a href="find-teammate.html">Find a Teammate</a><a href="applications.html">Applications</a><a href="my-team.html">My Team</a><a href="#" data-logout>Log out</a></nav>
+  </header>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="dashboard.html">Dashboard</a><span aria-hidden="true">/</span><span>Create a Project</span>
+    </nav>
+    <section class="page-heading">
+      <h1>Create a Project</h1>
+      <p>Describe your project and the teammates you need. Your project is saved in this browser for the demo.</p>
+    </section>
+    
+    <form class="form-card" id="createProjectForm">
+      <div class="form-grid">
+        <div class="form-group full"><label for="projectTitle">Project title *</label><input id="projectTitle" name="title" required maxlength="90" placeholder="e.g. Campus Lost-and-Found"></div>
+        <div class="form-group full"><label for="projectDescription">Project description *</label><textarea id="projectDescription" name="description" required maxlength="1200" placeholder="What problem does your project solve?"></textarea></div>
+        <div class="form-group"><label for="domain">Domain *</label><select id="domain" name="domain" required><option value="">Choose a domain</option><option>Web Development</option><option>AI / ML</option><option>App Development</option><option>Cybersecurity</option><option>Data Science</option><option>IoT / Hardware</option><option>Other</option></select></div>
+        <div class="form-group"><label for="techStack">Tech stack *</label><input id="techStack" name="techStack" required placeholder="e.g. C++, HTML, MySQL"></div>
+        <div class="form-group"><label for="skills">Skills needed *</label><input id="skills" name="skills" required placeholder="e.g. React, API integration"></div>
+        <div class="form-group"><label for="teamSize">Total team size *</label><select id="teamSize" name="teamSize" required><option value="">Choose team size</option><option value="2">2 members</option><option value="3">3 members</option><option value="4">4 members</option><option value="5">5 members</option><option value="6">6 members</option></select></div>
+        <div class="form-group"><label for="commitment">Expected commitment</label><select id="commitment" name="commitment"><option>Flexible</option><option>3–5 hours/week</option><option>5–8 hours/week</option><option>8+ hours/week</option></select></div>
+        <div class="form-group"><label for="visibility">Project visibility</label><select id="visibility" name="visibility"><option>Open to applications</option><option>Invite only</option></select></div>
+      </div>
+      <p class="help">* Required fields. Demo data is stored in localStorage on this device only.</p>
+      <div class="page-actions"><button type="submit">Save Project</button><a class="action-link secondary" href="dashboard.html">Cancel</a></div>
+      <p class="message" id="formMessage" role="status" aria-live="polite"></p>
+    </form>
+    
+  </main>
+  <footer class="footer">TeamForge · Frontend demonstration mode</footer>
+</body>
+</html>

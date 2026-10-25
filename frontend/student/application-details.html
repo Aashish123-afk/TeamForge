@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Details | TeamForge</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <script src="../js/extra-pages.js" defer></script>
+</head>
+<body data-page="application-details">
+  <header class="topbar">
+    <a class="logo" href="dashboard.html" aria-label="TeamForge home"><span class="logo-mark">T</span><span>Team<span class="forge">Forge</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a><a href="find-team.html">Find a Team</a><a href="find-teammate.html">Find a Teammate</a><a href="applications.html">Applications</a><a href="my-team.html">My Team</a><a href="#" data-logout>Log out</a></nav>
+  </header>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="dashboard.html">Dashboard</a><span aria-hidden="true">/</span><span>Application Details</span>
+    </nav>
+    <section class="page-heading">
+      <h1>Application Details</h1>
+      <p>View the details and current status of one application.</p>
+    </section>
+    
+    <section class="card" id="applicationDetails">
+      <h2 class="section-title" id="applicationTitle">Application</h2>
+      <div id="applicationFields"><p class="empty-state">No application selected. Open this page from Applications, or add an application ID to the URL as <code>?id=...</code>.</p></div>
+      <div class="page-actions"><a class="action-link secondary" href="applications.html">Back to Applications</a><a class="action-link secondary" href="dashboard.html">Dashboard</a></div>
+    </section>
+    
+  </main>
+  <footer class="footer">TeamForge · Frontend demonstration mode</footer>
+</body>
+</html>

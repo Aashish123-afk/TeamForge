@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Team | TeamForge</title><link rel="stylesheet" href="../style/app.css"><script src="../js/app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="logo" href="dashboard.html"><span class="logo-mark">T</span><span>Team</span><span class="forge">Forge</span></a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a href="profile.html">My Profile</a><a href="applications.html">Applications</a></nav></header>
+<main class="page">
+  <section class="page-heading"><h1>Find a Team</h1><p>Share what you can contribute and what kind of project interests you.</p></section>
+  <form class="form-card" id="teamForm">
+    <div class="form-grid">
+      <div class="form-group"><label for="domain">Preferred domain</label><select id="domain" name="domain" required><option value="">Select domain</option><option>Web Development</option><option>AI / ML</option><option>App Development</option><option>Cybersecurity</option><option>Data Science</option></select></div>
+      <div class="form-group"><label for="role">Preferred role</label><select id="role" name="role" required><option value="">Select role</option><option>Frontend</option><option>Backend</option><option>Database</option><option>AI / ML</option><option>Full Stack</option><option>Flexible</option></select></div>
+      <div class="form-group full"><label for="techStack">Your technical skills</label><input id="techStack" name="techStack" required placeholder="e.g. C++, CSS, MySQL"></div>
+      <div class="form-group"><label for="experience">Development experience</label><select id="experience" name="experience" required><option value="">Select level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+      <div class="form-group"><label for="dsaExperience">DSA experience</label><select id="dsaExperience" name="dsaExperience" required><option value="">Select level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+      <div class="form-group full"><label for="availability">Availability</label><select id="availability" name="availability" required><option value="">Choose availability</option><option>Weekdays</option><option>Weekends</option><option>Evenings</option><option>Flexible</option></select></div>
+      <div class="form-group full"><label for="about">About your interests</label><textarea id="about" name="about" placeholder="What do you want to learn or build with a team?"></textarea></div>
+    </div>
+    <button type="submit">Explore matching teams</button>
+  </form>
+</main>
+</body></html>

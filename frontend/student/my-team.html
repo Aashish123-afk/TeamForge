@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Team | TeamForge</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <script src="../js/extra-pages.js" defer></script>
+</head>
+<body data-page="my-team">
+  <header class="topbar">
+    <a class="logo" href="dashboard.html" aria-label="TeamForge home"><span class="logo-mark">T</span><span>Team<span class="forge">Forge</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a><a href="find-team.html">Find a Team</a><a href="find-teammate.html">Find a Teammate</a><a href="applications.html">Applications</a><a href="my-team.html">My Team</a><a href="#" data-logout>Log out</a></nav>
+  </header>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="dashboard.html">Dashboard</a><span aria-hidden="true">/</span><span>My Team</span>
+    </nav>
+    <section class="page-heading">
+      <h1>My Team</h1>
+      <p>Projects and team memberships you have joined in this frontend demo.</p>
+    </section>
+    
+    <section class="card">
+      <div class="page-actions" style="margin-top:0;margin-bottom:16px"><a class="action-link secondary" href="find-team.html">Find a Team</a><a class="action-link secondary" href="applications.html">View Applications</a></div>
+      <div id="myTeamList"><div class="empty-state">Your joined teams will appear here when an application is accepted in the demo.</div></div>
+    </section>
+    
+  </main>
+  <footer class="footer">TeamForge · Frontend demonstration mode</footer>
+</body>
+</html>

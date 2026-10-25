@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | TeamForge</title>
+    <link rel="stylesheet" href="../style/app.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body data-role="admin">
+    <main class="auth-container">
+        <section class="auth-card">
+            <a href="../auth.html" class="back-link">
+                &larr; Back
+            </a>
+            <a href="../auth.html" class="logo" aria-label="TeamForge home">
+                <span class="logo-mark">T</span>
+                <span class="team-text">Team</span><span class="forge-text">Forge</span>
+            </a>
+            <div class="auth-heading">
+                <h1>Admin Login</h1>
+                <p>Welcome back! Enter your administrator credentials to continue.</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Admin email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your admin email"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+                <div class="form-options">
+                    <label class="remember-option">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="../student/forgot_password.html" class="text-link">
+                        Forgot password?
+                    </a>
+                </div>
+                <button type="submit" class="login-button" id="loginButton">
+                    Login <span>&rarr;</span>
+                </button>
+                <p id="loginMessage" class="login-message" role="status"
+                   aria-live="polite"></p>
+            </form>
+            <p class="signup-text">
+                Need student access?
+                <a href="../student/stud_login.html" class="text-link">
+                    Go to Student Login
+                </a>
+            </p>
+            <p class="security-note">
+                Restricted administrator access · TeamForge
+            </p>
+        </section>
+    </main>
+</body>
+</html>

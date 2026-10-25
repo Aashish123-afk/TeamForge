@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile | TeamForge</title><link rel="stylesheet" href="../style/app.css"><script src="../js/profile.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="logo" href="dashboard.html"><span class="logo-mark">T</span><span>Team</span><span class="forge">Forge</span></a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a href="applications.html">Applications</a><a href="../auth.html">Log out</a></nav></header>
+<main class="page">
+  <section class="page-heading"><h1>My Student Profile</h1><p>Add the information teammates need to understand your strengths.</p></section>
+  <form class="form-card" id="profileForm">
+    <div class="form-grid">
+      <div class="form-group"><label for="fullName">Full name</label><input id="fullName" name="fullName" required placeholder="Your name"></div>
+      <div class="form-group"><label for="email">College email</label><input id="email" name="email" type="email" required placeholder="you@college.edu"></div>
+      <div class="form-group"><label for="domain">Preferred domain</label><select id="domain" name="domain" required><option value="">Select domain</option><option>Web Development</option><option>AI / ML</option><option>App Development</option><option>Cybersecurity</option><option>Data Science</option><option>Other</option></select></div>
+      <div class="form-group"><label for="experience">Development experience</label><select id="experience" name="experience" required><option value="">Select level</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+      <div class="form-group full"><label for="skills">Technical skills</label><input id="skills" name="skills" required placeholder="e.g. C++, HTML, CSS, MySQL"><p class="help">Separate skills with commas.</p></div>
+      <div class="form-group full"><label for="availability">Availability</label><select id="availability" name="availability" required><option value="">Choose availability</option><option>Weekdays</option><option>Weekends</option><option>Evenings</option><option>Flexible</option></select></div>
+    </div>
+    <button type="submit">Save profile</button><p id="profileMessage" class="message" role="status"></p>
+    <p class="help">Demo only: profile data is stored in this browser's localStorage, not in MySQL.</p>
+  </form>
+</main>
+</body></html>
