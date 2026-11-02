@@ -1,0 +1,10 @@
+^C:\USERS\7092A\ONEDRIVE\DOCUMENTS\TEAMFORGE\BACKEND-CPP\BUILD-MSVC\CMAKEFILES\9B26D13749957BDB4127A5417EC4E8D3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/7092a/OneDrive/Documents/TeamForge/backend-cpp -BC:/Users/7092a/OneDrive/Documents/TeamForge/backend-cpp/build-msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/7092a/OneDrive/Documents/TeamForge/backend-cpp/build-msvc/TeamForgeBackend.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

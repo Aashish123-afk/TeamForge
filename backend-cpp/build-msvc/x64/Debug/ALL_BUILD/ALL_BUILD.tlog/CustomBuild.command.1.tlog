@@ -1,0 +1,10 @@
+^C:\USERS\7092A\ONEDRIVE\DOCUMENTS\TEAMFORGE\BACKEND-CPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/7092a/OneDrive/Documents/TeamForge/backend-cpp -BC:/Users/7092a/OneDrive/Documents/TeamForge/backend-cpp/build-msvc --check-stamp-file C:/Users/7092a/OneDrive/Documents/TeamForge/backend-cpp/build-msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

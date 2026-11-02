@@ -1,7 +1,27 @@
+
 cmake_minimum_required(VERSION 3.20)
 project(TeamForgeBackend LANGUAGES CXX)
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_compile_definitions(_WIN32_WINNT=0x0A00)
+
 find_package(Crow CONFIG REQUIRED)
+
+set(MYSQL_ROOT "C:/Program Files/MySQL/MySQL Server 8.0")
+
 add_executable(teamforge src/main.cpp)
-target_link_libraries(teamforge PRIVATE Crow::Crow)
+
+target_include_directories(teamforge PRIVATE
+    "${MYSQL_ROOT}/include"
+)
+
+target_link_directories(teamforge PRIVATE
+    "${MYSQL_ROOT}/lib"
+)
+
+target_link_libraries(teamforge PRIVATE
+    Crow::Crow
+    libmysql
+)

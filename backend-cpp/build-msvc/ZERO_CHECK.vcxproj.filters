@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\7092a\OneDrive\Documents\TeamForge\backend-cpp\build-msvc\CMakeFiles\9b26d13749957bdb4127a5417ec4e8d3\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C8E74F2D-8179-3CBC-B6E7-79C0C04DAB62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
